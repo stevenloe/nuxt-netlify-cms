@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   repo: stevenloe/nuxt-netlify-cms
   branch: main # Branch to update (optional; defaults to master)
+  site_url: https://festive-wilson-mofo.app
+  display_url: https://festive-wilson-mofo.app
 
 media_folder: static/img
 public_folder: /img
