@@ -34,12 +34,26 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxt/content'
   ],
+
+  content: {
+    // Options
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  /* Generating pages with the generate property
+    Since Nuxt 2.13+, nuxt export has a crawler feature integrated which will crawl all your links and generate your routes based on those links. Therefore you do not need to do anything in order for your dynamic routes to be crawled. i.e, if you are on version of nuxt above 2.14 add target as static in nuxt.config.js and use nuxt generate to build your static site. */
+  target: 'static'
 }
+
+
+
+
+
+
